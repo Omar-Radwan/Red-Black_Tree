@@ -1,10 +1,10 @@
-public class Node<T extends Comparable> {
+public class Node {
 
-    static private Node NIL  ;
-    private T value;
-    private Node<T> l;
-    private Node<T> r;
-    private Node<T> p;
+    static private Node NIL;
+    private String value;
+    private Node l;
+    private Node r;
+    private Node p;
     private boolean black; // true for black and false for red
 
 
@@ -12,14 +12,14 @@ public class Node<T extends Comparable> {
         this.black = false; // red node by default
     }
 
-    public Node(T value) {
+    public Node(String value) {
         this();
         this.value = value;
         this.l = getNIL();
         this.r = getNIL();
     }
 
-    public Node(T value, Node<T> p) {
+    public Node(String value, Node p) {
         this(value);
         this.p = p;
     }
@@ -32,35 +32,35 @@ public class Node<T extends Comparable> {
         return NIL;
     }
 
-    public T getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(T value) {
+    public void setValue(String value) {
         this.value = value;
     }
 
-    public Node<T> getL() {
+    public Node getL() {
         return l;
     }
 
-    public void setL(Node<T> l) {
+    public void setL(Node l) {
         this.l = l;
     }
 
-    public Node<T> getR() {
+    public Node getR() {
         return r;
     }
 
-    public void setR(Node<T> r) {
+    public void setR(Node r) {
         this.r = r;
     }
 
-    public Node<T> getP() {
+    public Node getP() {
         return p;
     }
 
-    public void setP(Node<T> p) {
+    public void setP(Node p) {
         this.p = p;
     }
 

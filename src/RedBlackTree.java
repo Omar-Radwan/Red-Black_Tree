@@ -1,55 +1,41 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class RedBlackTree<T extends Comparable> {
+public class RedBlackTree {
 
-    public Node<T> root;
+    private Node root;
     private int size;
-
     public RedBlackTree() {
         root = Node.getNIL();
         root.setP(Node.getNIL());
         size = 0;
     }
 
-    public int height() {
-        return height(root);
+    public Node getRoot() {
+        return root;
     }
 
-    private int height(Node<T> cur) {
-        return cur == Node.getNIL() ? -1 : 1 + (Math.max(height(cur.getR()), height(cur.getL())));
+    public int getHeight() {
+        return getHeight(root);
     }
 
-    public boolean insertBadly(T value) {
-        Node<T> x = root, y = Node.getNIL();
+    private int getHeight(Node cur) {
+        return cur == Node.getNIL() ? -1 : 1 + (Math.max(getHeight(cur.getR()), getHeight(cur.getL())));
+    }
+
+
+    public boolean insert(String value) {
+        Node x = root, y = Node.getNIL();
         while (x != Node.getNIL()) {
-            if (x.getValue().equals(value)) return false;
+            if (x.getValue().compareToIgnoreCase(value) == 0) return false;
             y = x;
-            x = value.compareTo(x.getValue()) < 0 ? x.getL() : x.getR();
+            x = value.compareToIgnoreCase(x.getValue()) < 0 ? x.getL() : x.getR();
         }
         size++;
-        Node<T> z = new Node<>(value, y);
+        Node z = new Node(value, y);
         if (y == Node.getNIL())
             root = z;
-        else if (value.compareTo(y.getValue()) < 0)
-            y.setL(z);
-        else
-            y.setR(z);
-        return true;
-    }
-
-    public boolean insert(T value) {
-        Node<T> x = root, y = Node.getNIL();
-        while (x != Node.getNIL()) {
-            if (x.getValue().equals(value)) return false;
-            y = x;
-            x = value.compareTo(x.getValue()) < 0 ? x.getL() : x.getR();
-        }
-        size++;
-        Node<T> z = new Node<>(value, y);
-        if (y == Node.getNIL())
-            root = z;
-        else if (value.compareTo(y.getValue()) < 0)
+        else if (value.compareToIgnoreCase(y.getValue().toLowerCase()) < 0)
             y.setL(z);
         else
             y.setR(z);
@@ -57,13 +43,13 @@ public class RedBlackTree<T extends Comparable> {
         return true;
     }
 
-    private void insertionFix(Node<T> c) {
+    private void insertionFix(Node c) {
 
         while (!c.getP().isBlack()) {
 
             boolean isURight = (c.getP().getP().getL() == c.getP()), isCRight = (c.getP().getR() == c);
 
-            Node<T> u = isURight ? c.getP().getP().getR() : c.getP().getP().getL();
+            Node u = isURight ? c.getP().getP().getR() : c.getP().getP().getL();
 
             if (!u.isBlack()) {
                 c.getP().setBlack(true);
@@ -88,31 +74,32 @@ public class RedBlackTree<T extends Comparable> {
         root.setBlack(true);
     }
 
-    public boolean search(T value) {
-        Node<T> cur = root;
-        while (cur != Node.getNIL() && !(cur.getValue().equals(value))) {
-            cur = (value.compareTo(cur.getValue()) < 0) ? cur.getL() : cur.getR();
+    public boolean search(String value) {
+        Node cur = root;
+        while (cur != Node.getNIL() && !(cur.getValue().compareToIgnoreCase(value) == 0)) {
+            cur = (value.compareToIgnoreCase(cur.getValue()) < 0) ? cur.getL() : cur.getR();
         }
         return cur != Node.getNIL();
     }
 
 
-    public List<T> inOrderList() {
-        List<T> ret = new ArrayList<>();
+    public List<String> inOrderList() {
+        List<String> ret = new ArrayList<>();
         printInOrder(root, ret);
         return ret;
     }
 
-    private void printInOrder(Node<T> cur, List<T> ret) {
+
+    private void printInOrder(Node cur, List<String> ret) {
         if (cur == Node.getNIL()) return;
         printInOrder(cur.getL(), ret);
         ret.add(cur.getValue());
         printInOrder(cur.getR(), ret);
     }
 
-    public void leftRotate(Node<T> p) {
+    public void leftRotate(Node p) {
         if (p.getR() == Node.getNIL()) return;
-        Node<T> c = p.getR();
+        Node c = p.getR();
 
         p.setR(c.getL());
         c.setP(p.getP());
@@ -130,9 +117,9 @@ public class RedBlackTree<T extends Comparable> {
         p.setP(c);
     }
 
-    public void rightRotate(Node<T> p) {
+    public void rightRotate(Node p) {
         if (p.getL() == Node.getNIL()) return;
-        Node<T> c = p.getL();
+        Node c = p.getL();
         p.setL(c.getR());
         if (c.getR() != Node.getNIL())
             c.getR().setP(p);

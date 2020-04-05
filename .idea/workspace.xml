@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe52609-215e-4d5b-a16e-ec0d8ec4d100" name="Default Changelist" comment="" />
+    <list default="true" id="abe52609-215e-4d5b-a16e-ec0d8ec4d100" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RedBlackTree/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RedBlackTree/RedBlackTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RedBlackTree/RedBlackTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RedBlackTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RedBlackTree.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +23,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Zr72ikhBrdgJuXN9SbNu3zwD4p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -94,7 +105,11 @@
       <workItem from="1585704077902" duration="21584000" />
       <workItem from="1585851773141" duration="799000" />
       <workItem from="1585863485483" duration="1949000" />
-      <workItem from="1585942779899" duration="1083000" />
+      <workItem from="1585942779899" duration="1700000" />
+      <workItem from="1586025921187" duration="601000" />
+      <workItem from="1586040568236" duration="19000" />
+      <workItem from="1586114427019" duration="1575000" />
+      <workItem from="1586116823979" duration="793000" />
     </task>
     <servers />
   </component>
@@ -110,30 +125,39 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="419" y="151" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1585757913731" />
-    <state x="446" y="34" key="#com.intellij.ide.util.MemberChooser" timestamp="1585758617750">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="558" y="71" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1586117450319">
+      <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="446" y="34" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585758617750" />
-    <state width="1554" height="219" key="GridCell.Tab.0.bottom" timestamp="1585864463832">
+    <state x="558" y="71" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/0.27.1600.873@0.27.1600.873" timestamp="1586117450319" />
+    <state x="400" y="27" width="790" height="873" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586114885001">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="400" y="27" width="790" height="873" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1600.873@0.27.1600.873" timestamp="1586114885001" />
+    <state x="583" y="161" width="424" height="603" key="FileChooserDialogImpl" timestamp="1586115986463">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="583" y="161" width="424" height="603" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1586115986463" />
+    <state width="1554" height="219" key="GridCell.Tab.0.bottom" timestamp="1586117524276">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state width="1282" height="221" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585761166570" />
-    <state width="1554" height="219" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1585864463832" />
-    <state width="1554" height="219" key="GridCell.Tab.0.center" timestamp="1585864463832">
+    <state width="1554" height="219" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1586117524276" />
+    <state width="1554" height="219" key="GridCell.Tab.0.center" timestamp="1586117524276">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state width="1282" height="221" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585761166570" />
-    <state width="1554" height="219" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1585864463832" />
-    <state width="1554" height="219" key="GridCell.Tab.0.left" timestamp="1585864463831">
+    <state width="1554" height="219" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1586117524276" />
+    <state width="1554" height="219" key="GridCell.Tab.0.left" timestamp="1586117524275">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state width="1282" height="221" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585761166569" />
-    <state width="1554" height="219" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1585864463831" />
-    <state width="1554" height="219" key="GridCell.Tab.0.right" timestamp="1585864463832">
+    <state width="1554" height="219" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1586117524275" />
+    <state width="1554" height="219" key="GridCell.Tab.0.right" timestamp="1586117524276">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state width="1282" height="221" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585761166570" />
-    <state width="1554" height="219" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1585864463832" />
+    <state width="1554" height="219" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1586117524276" />
     <state width="1554" height="272" key="GridCell.Tab.1.bottom" timestamp="1585863462863">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
@@ -154,11 +178,15 @@
     </state>
     <state width="1282" height="221" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585761166570" />
     <state width="1554" height="272" key="GridCell.Tab.1.right/0.27.1600.873@0.27.1600.873" timestamp="1585863462862" />
-    <state x="435" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1585942780437">
+    <state x="385" y="117" width="819" height="691" key="NewModule_or_Project.wizard" timestamp="1586115998768">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="348" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1585704073548" />
-    <state x="435" y="244" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1585942780437" />
+    <state x="385" y="117" width="819" height="691" key="NewModule_or_Project.wizard/0.27.1600.873@0.27.1600.873" timestamp="1586115998768" />
+    <state x="435" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1586114426345">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="348" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586040568644" />
+    <state x="435" y="244" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1586114426345" />
     <state x="364" y="243" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585756416992">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -175,6 +203,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="281" y="66" width="717" height="546" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1585761106076" />
+    <state x="65" y="0" key="new project wizard" timestamp="1586040586214">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1586040586214" />
     <state x="299" y="152" key="run.anything.popup" timestamp="1585745245143">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -189,7 +221,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/RedBlackTree.java</url>
-          <line>92</line>
+          <line>78</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

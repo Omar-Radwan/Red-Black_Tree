@@ -47,8 +47,7 @@ public class Main {
                         redBlackTree.insert(readString);
                     }
                     System.out.println("# File Read");
-                    System.out.println("# Height = " + redBlackTree.getHeight() + " Size = " + redBlackTree.getSize() + " Root = " + redBlackTree.getRoot().getValue());
-                    System.out.println(redBlackTree.inOrderList());
+                    System.out.println("# Height = " + redBlackTree.getHeight() + " Size = " + redBlackTree.getSize());
                     x = 1;
                     input = new Scanner(System.in);
                 }
@@ -65,15 +64,15 @@ public class Main {
                                 choice = input.nextLine();
                                 boolean inserted = redBlackTree.insert(choice);
                                 System.out.println("# " + (inserted ? "String Inserted successfully" : "String already exist"));
-                                System.out.println("# Height = " + redBlackTree.getHeight() + " Size = " + redBlackTree.getSize() + " Root = " + redBlackTree.getRoot().getValue());
+                                System.out.println("# Height = " + redBlackTree.getHeight() + " Size = " + redBlackTree.getSize());
                             } else if (x == 1) {
                                 System.out.print("Enter String to be searched: ");
                                 choice = input.nextLine();
                                 boolean found = redBlackTree.search(choice);
                                 System.out.println(("#") + (found ? "String found" : "String  not found"));
-                                System.out.println("# Height = " + redBlackTree.getHeight() + " Size = " + redBlackTree.getSize() + " Root = " + redBlackTree.getRoot().getValue());
+                                System.out.println("# Height = " + redBlackTree.getHeight() + " Size = " + redBlackTree.getSize());
                             } else if (x == 2) {
-                                System.out.println("# Height = " + redBlackTree.getHeight() + " Size = " + redBlackTree.getSize() + " Root = " + redBlackTree.getRoot().getValue());
+                                System.out.println("# Height = " + redBlackTree.getHeight() + " Size = " + redBlackTree.getSize());
                                 System.out.println(redBlackTree.inOrderList());
                             } else {
                                 finish();
